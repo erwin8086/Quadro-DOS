@@ -19,7 +19,7 @@ void timer_int()
 {
   runtime_ms+=55;
   tick=1;
-  outportb(0x20, 0x20);
+  outportb(0x20, 0x20); // Reset timer int
 }
 
 void install_timer()
